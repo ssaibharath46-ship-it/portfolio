@@ -154,6 +154,34 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
 .toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,120px);background:var(--ac);color:var(--on);padding:12px 24px;border-radius:30px;z-index:600;transition:.5s;font-weight:600;max-width:90vw;text-align:center}.toast.s{transform:translate(-50%,0)}
 .fx{position:fixed;width:6px;height:6px;border-radius:50%;background:var(--ac);pointer-events:none;z-index:350}
 [hidden]{display:none!important}
+
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:30px;font-size:.78rem;color:var(--mu);margin-bottom:18px;background:var(--card)}
+.badge:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--ac);animation:pl 2s infinite}
+.pv{height:150px;border-radius:12px;border:1px solid var(--line);margin-bottom:18px;overflow:hidden;position:relative;background:var(--bg2)}
+.b2{height:20px;background:rgba(127,127,127,.14);display:flex;gap:5px;align-items:center;padding:0 9px}.b2 i{width:7px;height:7px;border-radius:50%;background:var(--mu);opacity:.55}
+.pv1 .bd{padding:10px}.pv1 .h{height:46px;border-radius:8px;background:linear-gradient(120deg,rgba(var(--acr),.55),rgba(var(--acr),.1));margin-bottom:8px;position:relative;overflow:hidden}
+.pv1 .h:after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);animation:sh 3.5s infinite}@keyframes sh{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.pv1 .g{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.pv1 .g span{height:50px;border-radius:8px;background:rgba(127,127,127,.16)}
+.pv2{background:linear-gradient(135deg,#3b1031,#1a1450);display:grid;place-items:center}
+.pv2 b{font:700 1.9rem 'Space Grotesk',sans-serif;color:#ffd6ef;letter-spacing:.04em;z-index:1}.pv2 b em{color:#ff5fa8;font-style:normal;display:inline-block;animation:hb 1.4s infinite}@keyframes hb{50%{transform:scale(1.3)}}
+.pv2 i{position:absolute;bottom:-20px;color:#ff7bb8;opacity:.0;font-style:normal;animation:up 6s infinite}
+.pv2 i:nth-child(1){left:12%;animation-delay:0s}.pv2 i:nth-child(2){left:30%;animation-delay:1.4s;font-size:.8rem}.pv2 i:nth-child(3){left:58%;animation-delay:2.6s}.pv2 i:nth-child(4){left:78%;animation-delay:.8s;font-size:.8rem}.pv2 i:nth-child(5){left:90%;animation-delay:3.6s}
+@keyframes up{0%{transform:translateY(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-190px);opacity:0}}
+.pv3{display:flex}.pv3 .sd{width:24%;background:rgba(127,127,127,.12);padding:12px 8px;display:grid;gap:7px;align-content:start}.pv3 .sd span{height:7px;border-radius:4px;background:rgba(127,127,127,.35)}.pv3 .sd span:first-child{background:var(--ac)}
+.pv3 .mn{flex:1;padding:12px;display:flex;align-items:flex-end;gap:8px}.pv3 .mn span{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(var(--ac),rgba(var(--acr),.25));height:var(--h);transform-origin:bottom;animation:gr 3s ease-in-out infinite alternate}
+.pv3 .mn span:nth-child(2n){animation-delay:.4s}.pv3 .mn span:nth-child(3n){animation-delay:.9s}@keyframes gr{from{transform:scaleY(.55)}to{transform:scaleY(1)}}
+details.dt{margin-top:16px;border-top:1px dashed var(--line);padding-top:12px}
+details.dt summary{cursor:pointer;color:var(--ac);font-size:.85rem;font-weight:600;list-style:none}details.dt summary::-webkit-details-marker{display:none}
+details.dt summary:before{content:'+ ';font-family:'JetBrains Mono',monospace}details.dt[open] summary:before{content:'− '}
+details.dt ul{margin:10px 0 0 18px;color:var(--mu);font-size:.88rem;display:grid;gap:5px}
+.term{padding:0;overflow:hidden;font-family:'JetBrains Mono',monospace;margin-top:44px}
+.term:hover{transform:none!important}
+.th2{display:flex;gap:7px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);font-size:.74rem;color:var(--mu)}.th2 i{width:11px;height:11px;border-radius:50%;background:#ff5f56}.th2 i:nth-child(2){background:#ffbd2e}.th2 i:nth-child(3){background:#27c93f}.th2 span{margin-left:10px}
+#tout{padding:16px;height:250px;overflow:auto;font-size:.82rem;white-space:pre-wrap;line-height:1.65;color:var(--mu);word-break:break-word}#tout b{color:var(--ac);font-weight:500}#tout em{color:var(--tx);font-style:normal}
+.tin{display:flex;gap:8px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);font-size:.85rem}.tin label{color:var(--ac)}
+#tcmd{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--tx);font:inherit}
+.tch{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 14px}.tch button{padding:5px 12px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--mu);font:inherit;font-size:.74rem;cursor:pointer;transition:.2s}.tch button:hover{color:var(--ac);border-color:var(--ac)}
+#top{position:fixed;right:20px;bottom:20px;z-index:150;opacity:0;visibility:hidden;transition:.3s;background:var(--card)}#top.s{opacity:1;visibility:visible}
 /* reveal */
 .js .rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1)}
 .js .rv.in{opacity:1;transform:none}
@@ -195,6 +223,7 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
 <section id="home"><canvas id="cube" width="700" height="700" aria-hidden="true"></canvas>
  <div class="wrap hero">
   <div class="rv">
+   <div class="badge">Open to freelance &amp; collaborations</div>
    <div class="hello">&gt; HELLO, I’M</div>
    <h1>Sai <em>Bharat</em></h1>
    <div class="typ" id="typ" aria-live="off">Full-Stack Developer</div>
@@ -240,6 +269,11 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
    </div>
   </div>
  </div>
+
+ <div class="card term rv" id="term"><div class="th2"><i></i><i></i><i></i><span>sai@portfolio: ~ (try me)</span></div>
+  <div id="tout" role="log" aria-live="polite"></div>
+  <div class="tch" id="tch"><button type="button">help</button><button type="button">whoami</button><button type="button">skills</button><button type="button">projects</button><button type="button">contact</button><button type="button">sudo hire-me</button></div>
+  <div class="tin"><label for="tcmd">$</label><input id="tcmd" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type a command…"></div></div>
 </div></section>
 
 <section id="skills"><div class="wrap">
@@ -260,20 +294,20 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
  <div class="eyebrow rv">03 · Projects</div><h2 class="rv">Featured <span>Projects</span></h2>
  <p class="lead rv">Real builds for real users: an institute, a couple’s memory space, and a full ERP platform.</p>
  <div class="grid">
-  <article class="card proj rv"><div class="num">01</div><h3>Emmanuel Institute Website</h3>
+  <article class="card proj rv"><div class="pv pv1" aria-hidden="true"><div class="b2"><i></i><i></i><i></i></div><div class="bd"><div class="h"></div><div class="g"><span></span><span></span><span></span></div></div></div><div class="num">01</div><h3>Emmanuel Institute Website</h3>
    <p>A website built to a private institute’s requirements: clean, fast, fully responsive and easy for students and parents to find what they need.</p>
    <div><span class="chip">Website</span><span class="chip">Responsive</span><span class="chip">Client project</span></div>
-   <div class="status">Completed</div>
+   <div class="status">Completed</div><details class="dt"><summary>Highlights</summary><ul><li>Built around the institute’s own requirements</li><li>Responsive on phone, tablet and desktop</li><li>Simple navigation for students and parents</li></ul></details>
    <div class="acts"><a class="btn sm mg" data-link="emmanuel" href="#" target="_blank" rel="noopener" hidden>🌐 Live Site</a></div></article>
-  <article class="card proj rv"><div class="num">02</div><h3>TwinBirds</h3>
+  <article class="card proj rv"><div class="pv pv2" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><b>Twin<em>♥</em>Birds</b></div><div class="num">02</div><h3>TwinBirds</h3>
    <p>A romantic, animated website made for couples to share moments and memories, with smooth motion and a warm, personal feel.</p>
    <div><span class="chip">Website</span><span class="chip">Animations</span><span class="chip">Live</span></div>
-   <div class="status">Live</div>
+   <div class="status">Live</div><details class="dt"><summary>Highlights</summary><ul><li>Animated, personal experience made for couples</li><li>A space to share moments and memories</li><li>Deployed and live</li></ul></details>
    <div class="acts"><a class="btn sm mg" data-link="twinbirds" href="#" target="_blank" rel="noopener" hidden>🌐 Live Site</a></div></article>
-  <article class="card proj rv"><div class="num">03</div><h3>ERP System</h3>
+  <article class="card proj rv"><div class="pv pv3" aria-hidden="true"><div class="sd"><span></span><span></span><span></span><span></span><span></span></div><div class="mn"><span style="--h:45%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:88%"></span><span style="--h:62%"></span><span style="--h:78%"></span></div></div><div class="num">03</div><h3>ERP System</h3>
    <p>An ERP platform under active development, covering management modules and data handling so an organisation can run its operations from one place.</p>
    <div><span class="chip">ERP</span><span class="chip">Management modules</span><span class="chip">Data handling</span></div>
-   <div class="status">In development</div>
+   <div class="status">In development</div><details class="dt"><summary>Highlights</summary><ul><li>Management modules for day-to-day operations</li><li>Data handling for records and reports</li><li>Actively being developed</li></ul></details>
    <div class="acts"><a class="btn sm mg" data-link="erp" href="#" target="_blank" rel="noopener" hidden>↗ Repository</a></div></article>
  </div>
 </div></section>
@@ -325,6 +359,7 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
  <p class="lead rv" style="margin-inline:auto">Have a project, internship or collaboration in mind? Drop a message and I’ll get back to you.</p>
  <div class="cbtn rv">
   <a class="btn f mg" href="mailto:ssaibharath46@gmail.com?subject=Hello%20Sai%20Bharat">📧 ssaibharath46@gmail.com</a>
+  <button class="btn mg" id="copy" type="button">⧉ Copy email</button>
   <a class="btn mg" href="tel:+919391078596">📱 +91 93910 78596</a>
  </div>
  <div class="cbtn rv">
@@ -341,6 +376,7 @@ footer{text-align:center;padding:30px 6%;color:var(--mu);position:relative;z-ind
 </main>
 <footer>© 2026 Sai Bharat · Built with HTML, CSS &amp; JavaScript</footer>
 
+<button class="ib" id="top" type="button" aria-label="Back to top">↑</button>
 <div id="lb" role="dialog" aria-modal="true" aria-label="Certificate viewer">
  <button class="ib lbb" id="lbc" type="button" aria-label="Close">✕</button>
  <button class="ib lbn" id="lbp" type="button" aria-label="Previous certificate">‹</button>
@@ -453,7 +489,7 @@ if(fine&&!reduce){var ring=$('#ring'),rx=0,ry=0,mx=0,my=0;
  document.addEventListener('mouseover',function(e){ring.classList.toggle('hv',!!e.target.closest('a,button,.card'))});
  $$('.card').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
   c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px');
-  if(c.id!=='cf')c.style.transform='perspective(800px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg) translateZ(6px)'});c.addEventListener('mouseleave',function(){c.style.transform=''})});
+  if(c.id!=='cf'&&c.id!=='term')c.style.transform='perspective(800px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg) translateZ(6px)'});c.addEventListener('mouseleave',function(){c.style.transform=''})});
  $$('.mg').forEach(function(b){b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+(e.clientX-r.left-r.width/2)*.22+'px,'+(e.clientY-r.top-r.height/2)*.22+'px)'});b.addEventListener('mouseleave',function(){b.style.transform=''})})}
 
 /* canvas colours follow the theme */
@@ -480,6 +516,33 @@ if(ic&&!small&&!reduce){var c=ic.getContext('2d'),t=(1+Math.sqrt(5))/2,V=[[-1,t,
   var Q=V.map(function(v){var X=v[0],Y=v[1],Z=v[2],A=Y*Math.cos(ax)-Z*Math.sin(ax),B=Y*Math.sin(ax)+Z*Math.cos(ax);Y=A;Z=B;A=X*Math.cos(ay)+Z*Math.sin(ay);B=-X*Math.sin(ay)+Z*Math.cos(ay);var s=350/(4-B/1.2);return[350+A*s*.9,350+Y*s*.9,B]});
   c.lineWidth=1.4;E.forEach(function(e){c.strokeStyle='rgba('+AC+','+(.35+(Q[e[0]][2]+Q[e[1]][2])*.12)+')';c.beginPath();c.moveTo(Q[e[0]][0],Q[e[0]][1]);c.lineTo(Q[e[1]][0],Q[e[1]][1]);c.stroke()});
   Q.forEach(function(p){c.fillStyle='rgb('+AC+')';c.beginPath();c.arc(p[0],p[1],3.4,0,6.3);c.fill()})}requestAnimationFrame(r)})()}
+
+
+/* back to top + copy email */
+var topb=$('#top');addEventListener('scroll',function(){topb.classList.toggle('s',scrollY>700)},{passive:true});
+topb.onclick=function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})};
+$('#copy').onclick=function(){var m='ssaibharath46@gmail.com';(navigator.clipboard?navigator.clipboard.writeText(m):Promise.reject()).then(function(){toast('Email copied to clipboard')}).catch(function(){toast('Email: '+m)})};
+
+/* interactive terminal */
+var tout=$('#tout'),tin=$('#tcmd'),hist=[],hp=0;
+function pr(t,cls){var d=document.createElement('div');if(cls){var b=document.createElement(cls);b.textContent=t;d.appendChild(b)}else d.textContent=t;tout.appendChild(d);tout.scrollTop=tout.scrollHeight}
+function go(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:reduce?'auto':'smooth'})}
+var CMD={
+ help:function(){pr('Commands: help, whoami, skills, projects, certs, resume, contact, theme, clear, sudo hire-me')},
+ whoami:function(){pr('Seemakurti Sai Bharat · B.Tech CSE @ KL University\nWeb developer · RPA · video editor · freelancer\nCore member, PR & Marketing, KL Samyak 2026')},
+ skills:function(){pr('frontend   HTML, CSS, React.js\nbackend    Node.js, MongoDB\nlanguages  C, C++, Java, Python\nautomation Automation Anywhere (RPA)\nlearning   DSA, databases, Linux')},
+ projects:function(){pr('01 Emmanuel Institute Website   [completed]\n02 TwinBirds                   [live]\n03 ERP System                  [in development]');go('projects')},
+ certs:function(){pr(C.length+' certificates and badges. Opening the gallery…');go('certs')},
+ resume:function(){pr('Downloading resume…');var a=document.createElement('a');a.href='resume.pdf';a.download='Sai_Bharat_Resume.pdf';document.body.appendChild(a);a.click();a.remove()},
+ contact:function(){pr('email  ssaibharath46@gmail.com\nphone  +91 93910 78596');go('contact')},
+ theme:function(){tb.click();pr('Theme switched to '+root.dataset.theme)},
+ clear:function(){tout.textContent=''},
+ 'sudo hire-me':function(){pr('[sudo] permission granted ✔  Taking you to the contact form…');setTimeout(function(){go('contact')},500)}
+};
+function runCmd(v){v=v.trim().toLowerCase().replace(/\s+/g,' ');if(!v)return;pr('$ '+v,'b');hist.push(v);hp=hist.length;(CMD[v]||function(){pr('command not found: '+v+'. Type "help".')})()}
+pr('Welcome! Type a command or tap a shortcut below.','b');pr('Tip: try "help".');
+tin.addEventListener('keydown',function(e){if(e.key==='Enter'){runCmd(tin.value);tin.value=''}else if(e.key==='ArrowUp'&&hist.length){hp=Math.max(0,hp-1);tin.value=hist[hp];e.preventDefault()}else if(e.key==='ArrowDown'){hp=Math.min(hist.length,hp+1);tin.value=hist[hp]||''}});
+$('#tch').addEventListener('click',function(e){var b=e.target.closest('button');if(b)runCmd(b.textContent)});
 
 /* contact form */
 function toast(m){var e=document.createElement('div');e.className='toast';e.setAttribute('role','status');e.textContent=m;document.body.appendChild(e);setTimeout(function(){e.classList.add('s')},30);setTimeout(function(){e.classList.remove('s');setTimeout(function(){e.remove()},600)},3400)}
