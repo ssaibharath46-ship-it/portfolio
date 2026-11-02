@@ -182,6 +182,16 @@ details.dt ul{margin:10px 0 0 18px;color:var(--mu);font-size:.88rem;display:grid
 #tcmd{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--tx);font:inherit}
 .tch{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 14px}.tch button{padding:5px 12px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--mu);font:inherit;font-size:.74rem;cursor:pointer;transition:.2s}.tch button:hover{color:var(--ac);border-color:var(--ac)}
 #top{position:fixed;right:20px;bottom:20px;z-index:150;opacity:0;visibility:hidden;transition:.3s;background:var(--card)}#top.s{opacity:1;visibility:visible}
+.pv4{background:linear-gradient(135deg,#f26b1d,#b8410a);display:grid;place-items:center;text-align:center}
+.pv4 b{font:700 1.7rem 'Space Grotesk',sans-serif;color:#fff;z-index:1}.pv4 small{display:block;font:500 .72rem 'JetBrains Mono',monospace;letter-spacing:.14em;color:#ffe3d0;margin-top:2px}
+.pv4 i{position:absolute;font-style:normal;font-size:1.3rem;opacity:.35;animation:fl 5s ease-in-out infinite}.pv4 i:nth-child(1){left:10%;top:18%}.pv4 i:nth-child(2){right:12%;top:22%;animation-delay:1s}.pv4 i:nth-child(3){left:18%;bottom:14%;animation-delay:2s}.pv4 i:nth-child(4){right:16%;bottom:16%;animation-delay:3s}
+@media(min-width:900px){#projects .grid{grid-template-columns:repeat(2,1fr)}}
+.hs{padding:clamp(40px,6vw,64px) 0 0}
+.hs .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:16px}
+.hc{display:block;padding:20px 22px}.hc .ico{font-size:1.5rem;margin-bottom:8px}.hc b{display:block;font:700 1.02rem 'Space Grotesk',sans-serif;line-height:1.25}.hc span{display:block;color:var(--mu);font-size:.82rem;margin-top:4px}
+.hc:hover b{color:var(--ac)}
+.feat{position:absolute;top:14px;right:14px;z-index:2;background:var(--ac);color:var(--on);font:700 .68rem 'JetBrains Mono',monospace;letter-spacing:.12em;padding:4px 10px;border-radius:20px}
+.latest{margin:-6px 0 22px;font-size:.9rem;color:var(--mu)}.latest a{color:var(--ac);font-weight:600;border-bottom:1px solid var(--ac)}
 /* reveal */
 .js .rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1)}
 .js .rv.in{opacity:1;transform:none}
@@ -228,13 +238,14 @@ details.dt ul{margin:10px 0 0 18px;color:var(--mu);font-size:.88rem;display:grid
    <h1>Sai <em>Bharat</em></h1>
    <div class="typ" id="typ" aria-live="off">Full-Stack Developer</div>
    <p class="sum">B.Tech CSE student at KL University. I build responsive websites, automate workflows with RPA, edit videos and take on freelance work, and I’m currently building an ERP system.</p>
+   <p class="latest">Latest build: <a href="https://secondserving.vercel.app/" target="_blank" rel="noopener">Second Serving ↗</a>, a food-rescue platform</p>
    <div class="btns">
     <a class="btn f mg" href="#projects">View Projects →</a>
     <a class="btn mg" href="resume.pdf" download="Sai_Bharat_Resume.pdf">⬇ Download Resume</a>
     <a class="btn mg" href="#contact">Hire Me</a>
    </div>
    <div class="stats">
-    <div><b data-n="3">3+</b>Projects</div><div><b data-n="16">16+</b>Certificates</div><div><b data-n="9">9+</b>Technologies</div>
+    <div><b data-n="4">4+</b>Projects</div><div><b data-n="17">17+</b>Certificates</div><div><b data-n="9">9+</b>Technologies</div>
    </div>
    <div class="soc">
     <a class="btn sm mg" data-link="github" href="#" target="_blank" rel="noopener" hidden>GitHub ↗</a>
@@ -251,11 +262,19 @@ details.dt ul{margin:10px 0 0 18px;color:var(--mu);font-size:.88rem;display:grid
 
 <div class="mq" aria-hidden="true"><div id="mq"></div></div>
 
+
+<section class="hs" aria-label="Highlights"><div class="wrap"><div class="grid">
+ <a class="card hc rv" href="#journey"><span class="ico">🏆</span><b>Smart India Hackathon 2026</b><span>Internal round participant · plus Adobe University Hackathon</span></a>
+ <a class="card hc rv" href="#certs"><span class="ico">🤖</span><b>Certified Advanced Automation Professional</b><span>Automation Anywhere · valid through 2028</span></a>
+ <a class="card hc rv" href="#journey"><span class="ico">🎪</span><b>KL Samyak 2026 · PR &amp; Marketing Core</b><span>National-level techno-management fest</span></a>
+ <a class="card hc rv" href="#projects"><span class="ico">🌐</span><b>2 live projects, 4 builds</b><span>Second Serving, TwinBirds, institute site, ERP in progress</span></a>
+</div></div></section>
+
 <section id="about"><div class="wrap">
  <div class="eyebrow rv">01 · About</div><h2 class="rv">About <span>Me</span></h2>
  <div class="two">
   <div class="about-t rv">
-   <p>I’m <b>Seemakurti Sai Bharat</b>, a Computer Science &amp; Engineering student at <b>KL University</b>. I enjoy turning ideas into polished, usable products, from a clean website for an institute to an animated site for couples, to an ERP platform that handles real management data.</p>
+   <p>I’m <b>Seemakurti Sai Bharat</b>, a Computer Science &amp; Engineering student at <b>KL University</b>. I enjoy turning ideas into polished, usable products, from a food-rescue platform to a clean website for an institute, an animated site for couples, and an ERP platform that handles real management data.</p>
    <p>Beyond code I edit videos, freelance for clients, and lead people: I’m a <b>core member of the PR &amp; Marketing team for KL Samyak 2026</b>, a national-level techno-management fest, and I volunteer at university events.</p>
    <p>I like competing and learning in public. I’ve taken part in <b>Smart India Hackathon</b> and the <b>Adobe University Hackathon</b>, and I’m a <b>Certified Advanced Automation Professional</b> (Automation Anywhere).</p>
   </div>
@@ -292,19 +311,25 @@ details.dt ul{margin:10px 0 0 18px;color:var(--mu);font-size:.88rem;display:grid
 
 <section id="projects"><div class="wrap">
  <div class="eyebrow rv">03 · Projects</div><h2 class="rv">Featured <span>Projects</span></h2>
- <p class="lead rv">Real builds for real users: an institute, a couple’s memory space, and a full ERP platform.</p>
+ <p class="lead rv">Real builds for real users: a food-rescue platform, an institute, a couple’s memory space, and a full ERP system.</p>
  <div class="grid">
-  <article class="card proj rv"><div class="pv pv1" aria-hidden="true"><div class="b2"><i></i><i></i><i></i></div><div class="bd"><div class="h"></div><div class="g"><span></span><span></span><span></span></div></div></div><div class="num">01</div><h3>Emmanuel Institute Website</h3>
+  <article class="card proj rv"><span class="feat">FEATURED</span><div class="pv pv4" aria-hidden="true"><i>🍲</i><i>🤝</i><i>🚴</i><i>🍞</i><div><b>Second Serving</b><small>RESCUE SURPLUS FOOD</small></div></div><div class="num">01</div><h3>Second Serving</h3>
+   <p>A platform that connects food donors with NGOs and volunteers so surplus food reaches people who need it instead of going to waste. Donate, claim and deliver, all in one place.</p>
+   <div><span class="chip">Web app</span><span class="chip">Donors · NGOs · Volunteers</span><span class="chip">Social impact</span></div>
+   <div class="status">Live</div>
+   <details class="dt"><summary>Highlights</summary><ul><li>Donors list surplus food they want to give away</li><li>NGOs claim it and volunteers deliver it</li><li>One place that connects all three groups</li></ul></details>
+   <div class="acts"><a class="btn sm f" href="https://secondserving.vercel.app/" target="_blank" rel="noopener">🌐 Live Site</a></div></article>
+  <article class="card proj rv"><div class="pv pv1" aria-hidden="true"><div class="b2"><i></i><i></i><i></i></div><div class="bd"><div class="h"></div><div class="g"><span></span><span></span><span></span></div></div></div><div class="num">02</div><h3>Emmanuel Institute Website</h3>
    <p>A website built to a private institute’s requirements: clean, fast, fully responsive and easy for students and parents to find what they need.</p>
    <div><span class="chip">Website</span><span class="chip">Responsive</span><span class="chip">Client project</span></div>
    <div class="status">Completed</div><details class="dt"><summary>Highlights</summary><ul><li>Built around the institute’s own requirements</li><li>Responsive on phone, tablet and desktop</li><li>Simple navigation for students and parents</li></ul></details>
    <div class="acts"><a class="btn sm mg" data-link="emmanuel" href="#" target="_blank" rel="noopener" hidden>🌐 Live Site</a></div></article>
-  <article class="card proj rv"><div class="pv pv2" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><b>Twin<em>♥</em>Birds</b></div><div class="num">02</div><h3>TwinBirds</h3>
+  <article class="card proj rv"><div class="pv pv2" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><b>Twin<em>♥</em>Birds</b></div><div class="num">03</div><h3>TwinBirds</h3>
    <p>A romantic, animated website made for couples to share moments and memories, with smooth motion and a warm, personal feel.</p>
    <div><span class="chip">Website</span><span class="chip">Animations</span><span class="chip">Live</span></div>
    <div class="status">Live</div><details class="dt"><summary>Highlights</summary><ul><li>Animated, personal experience made for couples</li><li>A space to share moments and memories</li><li>Deployed and live</li></ul></details>
    <div class="acts"><a class="btn sm mg" data-link="twinbirds" href="#" target="_blank" rel="noopener" hidden>🌐 Live Site</a></div></article>
-  <article class="card proj rv"><div class="pv pv3" aria-hidden="true"><div class="sd"><span></span><span></span><span></span><span></span><span></span></div><div class="mn"><span style="--h:45%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:88%"></span><span style="--h:62%"></span><span style="--h:78%"></span></div></div><div class="num">03</div><h3>ERP System</h3>
+  <article class="card proj rv"><div class="pv pv3" aria-hidden="true"><div class="sd"><span></span><span></span><span></span><span></span><span></span></div><div class="mn"><span style="--h:45%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:88%"></span><span style="--h:62%"></span><span style="--h:78%"></span></div></div><div class="num">04</div><h3>ERP System</h3>
    <p>An ERP platform under active development, covering management modules and data handling so an organisation can run its operations from one place.</p>
    <div><span class="chip">ERP</span><span class="chip">Management modules</span><span class="chip">Data handling</span></div>
    <div class="status">In development</div><details class="dt"><summary>Highlights</summary><ul><li>Management modules for day-to-day operations</li><li>Data handling for records and reports</li><li>Actively being developed</li></ul></details>
@@ -439,6 +464,7 @@ bars('sk-au',[['Automation (RPA)',60]]);
 var C=[
 ['Smart India Hackathon 2026','Internal round participation · A.Y. 2026-27 · KL MDI&E & KL CIIE','comp','smart-india-hackathon'],
 ['Certified Advanced Automation Professional','Automation Anywhere · 2 Sep 2026 (valid till 2028)','tech','automation-anywhere'],
+['GitHub · Intermediate Certification','Intermediate-level GitHub certification','tech',null],
 ['MongoDB · CRUD Operations','MongoDB Skill badge · 13 Oct 2026','tech','mongodb-crud'],
 ['Linux Essentials','Cisco Networking Academy via KL University · 29 Oct 2026','tech','linux-essentials'],
 ['Introduction to Python','SoloLearn · 27 Mar 2026','tech','sololearn-python'],
@@ -454,7 +480,7 @@ var C=[
 ['MY Bharat Registration','Ministry of Youth Affairs & Sports','svc','my-bharat-registration'],
 ['Mother Earth Pledge','Ministry of Earth Sciences · 20 May 2026','svc','mother-earth-pledge']];
 var cg=$('#cg');
-cg.innerHTML=C.map(function(c,i){var th=c[3]?'<img loading="lazy" decoding="async" src="certificates/'+c[3]+'.jpg" alt="'+esc(c[0])+' certificate">':'<span class="ph" aria-hidden="true">🗣️</span>';
+cg.innerHTML=C.map(function(c,i){var th=c[3]?'<img loading="lazy" decoding="async" src="certificates/'+c[3]+'.jpg" alt="'+esc(c[0])+' certificate">':'<span class="ph" aria-hidden="true">🏅</span>';
  return '<button class="card cc rv" type="button" data-i="'+i+'" data-c="'+c[2]+'"><div class="th">'+th+'</div><h3>'+esc(c[0])+'</h3><p>'+esc(c[1])+'</p></button>'}).join('');
 var vis=C.map(function(_,i){return i});
 $('#filters').addEventListener('click',function(e){var b=e.target.closest('.fb');if(!b)return;$$('.fb').forEach(function(x){x.classList.toggle('on',x===b)});
@@ -531,7 +557,7 @@ var CMD={
  help:function(){pr('Commands: help, whoami, skills, projects, certs, resume, contact, theme, clear, sudo hire-me')},
  whoami:function(){pr('Seemakurti Sai Bharat · B.Tech CSE @ KL University\nWeb developer · RPA · video editor · freelancer\nCore member, PR & Marketing, KL Samyak 2026')},
  skills:function(){pr('frontend   HTML, CSS, React.js\nbackend    Node.js, MongoDB\nlanguages  C, C++, Java, Python\nautomation Automation Anywhere (RPA)\nlearning   DSA, databases, Linux')},
- projects:function(){pr('01 Emmanuel Institute Website   [completed]\n02 TwinBirds                   [live]\n03 ERP System                  [in development]');go('projects')},
+ projects:function(){pr('01 Second Serving              [live]\n02 Emmanuel Institute Website   [completed]\n03 TwinBirds                   [live]\n04 ERP System                  [in development]');go('projects')},
  certs:function(){pr(C.length+' certificates and badges. Opening the gallery…');go('certs')},
  resume:function(){pr('Downloading resume…');var a=document.createElement('a');a.href='resume.pdf';a.download='Sai_Bharat_Resume.pdf';document.body.appendChild(a);a.click();a.remove()},
  contact:function(){pr('email  ssaibharath46@gmail.com\nphone  +91 93910 78596');go('contact')},

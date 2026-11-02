@@ -3,7 +3,7 @@
 Static site (HTML, CSS, JavaScript). No build step.
 
 ## Before submitting
-1. Open `index.html`, find `var LINKS={...}` and paste your GitHub, LinkedIn, TwinBirds, Emmanuel site and ERP repo URLs.
+1. Open `index.html`, find `var LINKS={...}` and paste your GitHub, LinkedIn, TwinBirds, Emmanuel site and ERP repo URLs (Second Serving is already linked).
 2. Replace `resume.pdf` with your own latest resume if you have one (keep the file name).
 3. Deploy (any one):
    - **Vercel:** drag this folder into vercel.com/new, or `npx vercel --prod`. Then Settings → Deployment Protection → turn OFF Vercel Authentication.
